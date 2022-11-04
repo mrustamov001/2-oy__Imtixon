@@ -1,0 +1,120 @@
+footer{
+    background: #F3F3F3;
+    border: 1px solid #EBEBEB;
+}
+
+.footer__inner{
+    @include row;
+    align-items: flex-start;
+    padding-top: 54px;
+    padding-bottom: 23px;
+}
+
+.footer__logo-link{
+    &:hover{
+        opacity: 0.8;
+    }
+
+    &:active{
+        opacity: 0.6;
+    }
+}
+
+.footer__left-list{
+    @include row;
+    margin-left: 67px;
+}
+
+.footer__left-item{
+    @include row;
+    width: 288px;
+    
+    justify-content: space-around;
+}
+
+.footer__right-item{
+    @include row;
+    align-items: flex-start;
+    width: 871px;
+    justify-content: space-around;
+}
+
+.item__right--active{
+    position: relative;
+    &::before{
+        position: absolute;
+        top: 10%;
+        left: -15%;
+        display: block;
+        width: 14px;
+        height: 14px;
+        content: "";
+        background-image: url("/images/header-adress-right.svg");
+        background-repeat: no-repeat;
+    }
+}
+
+.item__right-address{
+    position: relative;
+    &::before{
+        position: absolute;
+        top: 10%;
+        left: -15%;
+        display: block;
+        width: 14px;
+        height: 14px;
+        content: "";
+        background-image: url("/images/header-adress-left.svg");
+        background-repeat: no-repeat;
+    }
+}
+
+.item__right--active{
+    position: relative;
+    &::before{
+        position: absolute;
+        top: 10%;
+        left: -15%;
+        display: block;
+        width: 14px;
+        height: 14px;
+        content: "";
+        background-image: url("/images/header-adress-middle.svg");
+        background-repeat: no-repeat;
+    }
+}
+
+.item__right-link{
+    @include font(normal, 500, 14px, 18px, #333);
+
+    &:hover{
+        color: #FFBD54;
+        opacity: 0.8;
+    }
+
+    &:active{
+        color: #333333;
+        opacity: 0.6;
+    }
+}
+
+.item__left-link{
+    @include font(normal, 500, 14px, 18px, #333);
+    
+
+    &:hover{
+        width: 100%;
+        color: #FFBD54;
+        border-bottom: 2px solid rgba(255, 189, 84, 0.8);
+    }
+
+    &:active{
+        color: #333333;
+        opacity: 0.6;
+    }
+}
+
+.footer__description{
+    @include font(normal, 400, 14px, 18px, #5c5c5c);
+    text-align: end;
+}

@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../sass/components/-home-contact-section.scss"
-    ],
-    "names": [],
-    "file": "-home-contact-section.css"
-}

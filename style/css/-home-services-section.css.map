@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../sass/components/-home-services-section.scss"
-    ],
-    "names": [],
-    "file": "-home-services-section.css"
-}

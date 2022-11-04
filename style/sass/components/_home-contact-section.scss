@@ -1,0 +1,47 @@
+.contact{
+    width: 100%;
+    margin: 100px 0;
+    background-image: url(../../../images/contact-background-img.svg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact__inner{
+    position: relative;
+    margin-left: 150px;
+    padding: 90px 0;
+    
+    &::after{
+        position: absolute;
+        top: -35%;
+        right: 5%;
+        display: block;
+        content: "";
+        width: 613px;
+        height: 481px;
+        background-image: url(../../../images/contact__dog.png);
+    }
+}
+
+.contact__title{
+    margin-bottom: 63px;
+    @include font(normal, 700, 48px, 20px, #fff);
+    display: flex;
+    align-items: center;
+}
+
+.contact__form-email{
+    padding: 18px 147px 12px 22px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: transparent;
+}
+
+.contact__form-btn{
+    margin-left: 21px;
+    padding: 14px 52px 10px 52px;
+    @include font(normal, 500, 16px, 21px, #333);
+    background: #333333;
+    border-radius: 3px;
+    border: transparent;
+}
